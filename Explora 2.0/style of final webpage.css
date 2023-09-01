@@ -1,0 +1,279 @@
+* {
+    margin: 0%;
+    
+   }
+
+
+  
+
+  
+   
+
+    
+   /* .bgimage {
+    height: auto;
+    position: relative;
+    padding: 0%;
+    
+    
+    }
+
+    .bgi {
+    width: 100%;
+    height:100vh ;
+    
+    display: block;
+    background-image: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    }*/
+
+
+    .header {
+        position: relative;
+        padding-top: 20px;
+        margin-left: 30px;
+        margin-right: 100px;
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+        height: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+    
+    
+    
+
+    .containers{
+
+        position: relative;
+        padding-top: 200px;
+        padding-left: 800px;
+        padding-right: 130px;
+        margin-bottom: -200px;
+
+
+
+        }
+
+        .slider-wrappers {
+        position: relative;
+        max-width: 48rem;
+        margin: 0 auto;
+        
+       
+        }
+
+        
+
+            
+        .slidered {
+        display: flex;
+        aspect-ratio: 16 / 9;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+        border-radius: 20px;
+        background-size: 100% , 100%;
+        background-image: url("front-img/Dark-Anime-Desktop-Wallpaper-4K.jpg"); 
+        animation: image 30s linear infinite;
+        
+        
+       
+        }
+        @keyframes image {
+            0%{
+                background-image: url("front-img/Dark-Anime-Desktop-Wallpaper-4K.jpg");
+            }
+            5%{
+                background-image: url("front-img/space.jpg");
+            }
+            10%{
+                background-image: url("front-img/games.jpg");
+            }
+            15%{
+                background-image: url("front-img/food.jpg");
+            }
+            20%{
+                background-image: url("front-img/shopping.jpg");
+            }
+
+            25% {
+                background-image: url("front-img/anime.jpg");
+                
+            }
+            30% {
+                background-image: url("front-img/app-store.jpg");
+            }
+            35% {
+                background-image: url("front-img/com.jpg");
+            }
+            40%{
+                background-image: url("front-img/compony.jpg");
+            }
+            45% {
+                background-image: url("front-img/cute-music-04.jpg");
+
+            }
+            50% {
+                background-image: url("front-img/GOV.jpg");
+            }
+            55% {
+                background-image: url("front-img/High_resolution_wallpaper_background_ID_77701914066.jpg");
+
+            }
+            60% {
+                background-image: url("front-img/matremony.jpg");
+            }
+            65% {
+                background-image: url("front-img/movie.jpg");
+            }
+            70% {
+                background-image: url("front-img/MUSIC-1.jpg");
+            }
+            75% {
+                background-image: url("front-img/tech.jpg");
+            }
+            80% {
+                background-image: url("front-img/need-for-speed-rivals-car_1535966867.jpg");
+
+            }
+            85% {
+                background-image: url("front-img/taxi-service.jpg");
+            }
+            90% {
+                background-image: url("front-img/taxi-service.jpg");
+
+            }
+            95% {
+                background-image: url("front-img/nature-2.jpg");
+
+            }
+            100% {
+                background-image: url("front-img/traval\ tickets.jpg");
+            }
+        }   
+
+
+        
+
+ /*__________________________________________ for multi option __________________________________________*/
+ 
+ 
+        * {
+            margin: 0%;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+
+        .container {
+            margin-top: -100;
+            padding: 32px;
+            margin-left: 150px;
+            display: block;
+            
+            
+
+        }
+
+        .select-box {
+            display: flex;
+            width: 400px;
+            flex-direction: column;
+            
+
+
+        }
+
+        .select-box .options-container {
+            background-color: #2f3640;
+            color: white;
+            max-height: 0;
+            width: 100%;
+            opacity: 0;
+            transition: all 0.5s;
+            border-radius: 10px;
+            overflow: hidden;
+            order: 1;
+
+
+        }
+        .selected {
+            background: #2f3640;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            color: white;
+            position: relative;
+            order: 0;
+            margin-top: 12px;
+            
+            
+
+
+        }
+
+        .selected::after {
+            content: "" ;
+            background: url("front-img/download\ \(1\).jpg");
+            mix-blend-mode: multiply;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            height: 100%;
+            width: 32px;
+            right: 10px;
+            top: 5px;
+            transition: all 0.5s;
+
+        }
+
+
+        .select-box .options-container.active {
+            max-height: 240px;
+            opacity: 1;
+            overflow-y: scroll;
+
+        }
+
+        .select-box .options-container.active + .selected::after {
+            transform: rotateX(180deg);
+            top: -6px;
+        }
+
+        .select-box .options-container::-webkit-scrollbar {
+            width: 8px;
+            background-color: black;
+            border-radius:  0 8px 8px 0 ;
+        }
+
+        .select-box .options-container::-webkit-scrollbar-thumb {
+            background: gray;
+            border-radius:  0 8px 8px 0 ;
+
+        }
+
+        .select-box .options,
+        .selected {
+            padding: 12px  24px;
+            cursor: pointer;
+        }
+
+        .select-box .options:hover {
+            background: #414b57;
+        }
+
+        .select-box label {
+            cursor: pointer;
+
+
+        }
+
+        .select-box .options .radio {
+            display: none;
+        }
+
+
